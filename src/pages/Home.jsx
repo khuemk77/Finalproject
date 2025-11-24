@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import watch1 from '../assets/watch-1.jpg';
 import watch2 from '../assets/watch-2.jpg';
 import watch3 from '../assets/watch-3.jpg';
+import allwatches from '../assets/allwatches.jpg';
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-content">
+        <div className="hero-content" style={{ backgroundImage: `url(${allwatches})` }}>
           <h1>Timeless Watches, Delivered Worldwide</h1>
           <p>Discover our collection of premium watches that combine style, precision, and craftsmanship.</p>
           <Link to="/shop" className="btn">Shop Now</Link>
